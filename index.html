@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Header with Navigation Links (Sticky) -->
+<header class="sticky-top bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- About Me Section -->
+<section id="about" class="py-5 text-center text-md-start">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+        <div class="profile-pic mb-3 mb-md-0 me-md-4">
+            <img src="hoselu.jpg" alt="Your Profile Picture" class="rounded-circle img-fluid" style="width: 150px; height: 150px;">
+     </div>
+        <h2>About Me</h2>
+        <p>Hi, I'm Brian Hoselu, a passionate web developer. I love building web applications and learning new technologies.</p>
+    </div>
+    <div class="hire-me-container">
+        <a href="#contact" class="hire-me-button">Hire Me</a>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <label>HTML</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <label>CSS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <label>JavaScript</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <label>Bootstrap</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--cards-->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Blog</h5>
+                        <p class="card-text">A simple blog built with HTML and CSS, also includes README.</p>
+                        <a href="https://github.com/hoselubrian/hoseluPort" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">I was learning Javascript and i recorded the progress.</p>
+                        <a href="https://github.com/hoselubrian/javascript" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Furniture Website</h5>
+                        <p class="card-text">I built a website marketing Furniture and it includes bootstrap.</p>
+                        <a href="https://github.com/hoselubrian/Oloishorua" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section with Hover and Focus Effects -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer with Social Icons -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Brian Hoselu - All Rights Reserved</p>
+    <p>
+        <a href="https://www.instagram.com/timanbryan47" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/bryanhoselu" target="_blank" class="text-white ms-3"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/hoselubrian" target="_blank" class="text-white ms-3"><i class="fab fa-github"></i></a>
+    </p>
+</footer>
+
+</body>
+</html>
